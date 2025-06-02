@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- ПІДКЛЮЧЕННЯ БАЗОВОГО СТИЛЮ-СТИЛІВ -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rozwijane Menu z Animacją</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
 
-    <!-- ПІДКЛЮЧЕННЯ СКРИПТА-ІВ -->
-    <script src="script.js"></script>
+  <div class="navbar">
+    <div class="nav-left">
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      <div class="nav-links" id="navLinks">
+        <a href="menu.html">Menu</a>
+        <a href="#">Restaurants</a>
+        <a href="Order.html">Order</a>
+      </div>
+    </div>
+
+    <div class="logo">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Burger_King_2020.svg/1200px-Burger_King_2020.svg.png" alt="Logo">
+    </div>
+
+    <div class="nav-right">
+      <button class="signup-btn">Sign Up</button>
+      <div class="cart">
+        <span class="cart-icon">&#128722;</span> zł 0.00
+      </div>
+      <div class="language">&#127760; EN</div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>

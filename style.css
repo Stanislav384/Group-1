@@ -1,0 +1,107 @@
+ body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    background-color: #f5e8d0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f9f2e7;
+      padding: 10px 20px;
+      border-bottom: 1px solid #e0d7cc;
+      position: relative;
+      z-index: 10;
+    }
+
+    .nav-left,
+    .nav-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu-icon {
+      font-size: 24px;
+      margin-right: 15px;
+      cursor: pointer;
+      color: #5a2d0c;
+      display: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #5a2d0c;
+    }
+
+    .logo {
+      margin: 0 30px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .signup-btn {
+      background-color: #d62300;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+
+    .cart {
+      background-color: #512000;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+
+    .cart-icon {
+      margin-right: 6px;
+    }
+
+    .language {
+      font-size: 14px;
+      color: #6e4e3e;
+      cursor: pointer;
+    }
+
+    /* MOBILE STYLES */
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease;
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        background-color: #f9f2e7;
+        border: 1px solid #e0d7cc;
+        width: 160px;
+        padding: 0 10px;
+      }
+
+      .nav-links.show {
+        max-height: 500px; /* Dowolnie – ważne, by było większe niż zawartość */
+        padding: 10px;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
