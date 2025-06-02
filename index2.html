@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu - Burger King Styl (Bez podświetleń)</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f2e7;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f9f2e7;
+      padding: 10px 20px;
+      border-bottom: 1px solid #e0d7cc;
+    }
+
+    .nav-left,
+    .nav-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-left .menu-icon {
+      font-size: 24px;
+      margin-right: 20px;
+      cursor: pointer;
+      color: #5a2d0c;
+    }
+
+    .nav-left a {
+      margin-right: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #5a2d0c;
+    }
+
+    .nav-left a:hover {
+      text-decoration: none;
+    }
+
+    .logo {
+      margin: 0 40px;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .nav-right .signup-btn {
+      background-color: #d62300;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+
+    .cart {
+      background-color: #512000;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+
+    .cart-icon {
+      margin-right: 6px;
+    }
+
+    .language {
+      font-size: 14px;
+      color: #6e4e3e;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="nav-left">
+      <div class="menu-icon">&#9776;</div>
+      <a href="#">Menu</a>
+      <a href="#">Restaurants</a>
+      <a href="#">Order</a>
+    </div>
+
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Burger_King_2020.svg/1200px-Burger_King_2020.svg.png" alt="Burger King Logo">
+    </div>
+
+    <div class="nav-right">
+      <button class="signup-btn">Sign Up</button>
+      <div class="cart">
+        <span class="cart-icon">&#128722;</span> zł 0.00
+      </div>
+      <div class="language">&#127760; EN</div>
+    </div>
+  </div>
+
+</body>
+</html>
