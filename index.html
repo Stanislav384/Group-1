@@ -3,23 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rozwijane Menu z Animacją</title>
+  <title>Menu - Burger King Styl</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="navbar">
     <div class="nav-left">
-      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-      <div class="nav-links" id="navLinks">
-        <a href="menu.html">Menu</a>
-        <a href="#">Restaurants</a>
-        <a href="Order.html">Order</a>
-      </div>
+      <div class="menu-icon"></div>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="">Restaurants</a>
+      <a href="Delivery.html">Delivery</a>
     </div>
 
     <div class="logo">
-     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Burger_King_2020.svg/1200px-Burger_King_2020.svg.png" alt="Logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Burger_King_2020.svg/1200px-Burger_King_2020.svg.png" alt="Burger King Logo">
     </div>
 
     <div class="nav-right">
@@ -31,11 +29,5 @@
     </div>
   </div>
 
-  <script>
-    function toggleMenu() {
-      const nav = document.getElementById('navLinks');
-      nav.classList.toggle('show');
-    }
-  </script>
 </body>
 </html>
