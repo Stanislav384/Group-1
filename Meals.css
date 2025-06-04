@@ -77,8 +77,8 @@ body {
 }
 
 .category-item.active {
-  background-color: transparent;
-  box-shadow: none;
+  background-color: #ffe4b5;
+  border-radius: 12px;
 }
 
 h2 {
@@ -218,10 +218,7 @@ h2 {
   height: 16px;
   margin-right: 6px;
 }
-.category-item.active {
-  background-color: #ffe4b5;
-  border-radius: 12px;
-}
+
 .site-footer {
   background-color: #2b0000;
   color: #fce7c4;
@@ -298,4 +295,46 @@ h2 {
   font-weight: bold;
   font-size: 16px;
   text-align: left;
+}
+
+/* >>>>> ДОБАВЛЕННЫЙ БЛОК ДЛЯ КОМБО-НАБОРОВ <<<<< */
+
+.meals-section {
+  padding: 40px 20px;
+  background-color: #fff1e6;
+}
+
+.meals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.meal-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+.meal-card:hover {
+  transform: translateY(-5px);
+}
+
+.meal-card img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.meal-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4c2800;
+  margin: 0;
 }
